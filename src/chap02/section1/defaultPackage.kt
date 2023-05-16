@@ -1,5 +1,8 @@
 package chap02.section1
 
+import kotlin.math.PI
+import kotlin.math.abs
+
 /**
  * @author 이승환
  * @since 2023-05-16
@@ -7,6 +10,9 @@ package chap02.section1
 fun main() {
     val intro: String = "안녕하세요!"
     val num: Int = 20
+
+    println(PI)
+    println(abs(-12.6)) // 절댓값을 출력하는 abs() 함수
 
     println("intro: $intro, num: $num")
 }
