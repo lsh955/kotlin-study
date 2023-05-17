@@ -12,4 +12,10 @@ fun main() {
 
     val special = "\"hello\", I have \$15" // 이스케이프 문자인 \"을 사용해 큰따옴표를 문자열 안에 표현.
     println(special)
+
+    /**
+     * 중괄호를 사용해도 큰따옴표나 $를 표현할 수 있는가?
+     */
+    val special2 = "${'"'}${'$'}9.99${'"'}"
+    println(special2) // "$9.99"
 }
