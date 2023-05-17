@@ -9,9 +9,20 @@ fun main() {
     // str1 = null 코틀린은 null을 허용하지 않음.
     println("str1: $str1")
 
+    // String 과 String? 서로다른 자료형임.
+
     var str2: String? = "이승환"
     str2 = null // null을 허용하려면 자료형에 ? 기호를 명시해야 한다.
     println("str2: $str2")
 
-    // String 과 String? 서로다른 자료형임.
+    // println("str2 length: ${str2.length}") 기본적으로 null을 허용하면 length가 실행될 수 없음.
+
+    /**
+     * null이 할당되어 있을 가능성이 있는 변수를 검사하여 안전하게 호출하는 '세이프 콜' 기법
+     * 호출할 변수 뒤어 ?.를 작성하면 된다.
+     */
+    println("str2 length: ${str2?.length}") // 세이프 콜 기법 적용.
+
+
+
 }
