@@ -30,4 +30,12 @@ fun main() {
      * 하지만 실행도중에 NPE 가 발생한다.
      */
     // println("str2 length: ${str2!!.length}") NPE 강제발생.
+
+    /**
+     * 조건문을 활용해 null 을 허용한 변수검사.
+     * null 을 허용한 변수의 null 상태 가능성을 검사 하기만하면
+     * 코틀린 컴파일러는 오류를 발생하지 않는다.
+     */
+    val len = if(str2 != null) str2.length else -1
+    println("str2: $str2 length: ${len}")
 }
