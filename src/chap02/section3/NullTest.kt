@@ -12,4 +12,6 @@ fun main() {
     var str2: String? = "이승환"
     str2 = null // null을 허용하려면 자료형에 ? 기호를 명시해야 한다.
     println("str2: $str2")
+
+    // String 과 String? 서로다른 자료형임.
 }
