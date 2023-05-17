@@ -18,11 +18,16 @@ fun main() {
     // println("str2 length: ${str2.length}") 기본적으로 null을 허용하면 length가 실행될 수 없음.
 
     /**
+     * '세이프 콜' 기법
      * null이 할당되어 있을 가능성이 있는 변수를 검사하여 안전하게 호출하는 '세이프 콜' 기법
      * 호출할 변수 뒤어 ?.를 작성하면 된다.
      */
     println("str2 length: ${str2?.length}") // 세이프 콜 기법 적용.
 
-
-
+    /**
+     * non-null 단정기호 기법
+     * 변수에 할당된 값이 null이 아님을 단정하므로 컴파일러가 null 검사없이 무시한다.
+     * 하지만 실행도중에 NPE 가 발생한다.
+     */
+    // println("str2 length: ${str2!!.length}") NPE 강제발생.
 }
