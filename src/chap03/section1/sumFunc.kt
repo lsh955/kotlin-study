@@ -8,3 +8,9 @@ fun sum(a: Int, b: Int): Int {
     var sum = a + b
     return sum
 }
+
+/**
+ * 덧셈 함수를 한줄로 표현하는 방법.
+ */
+// fun sum(a: Int, b: Int): Int a + b
+// fun sum(a: Int, b: Int) = a + b
