@@ -8,7 +8,7 @@ fun main() {
     val res1 = funcParam(3, 2, ::sum) // :: 기호를 함수이름에 사용해, 소괄호 인자를 생략가능.
     println(res1) // 5
 
-    hello(::text) // 최종, return 이 없으므로 반환값이 없음.
+    hello(::text) // Hi! Hello World
 
     val likeLambda = ::sum
     println(likeLambda(6, 6))
