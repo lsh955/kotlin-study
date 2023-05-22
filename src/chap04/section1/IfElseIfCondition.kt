@@ -17,5 +17,8 @@ fun main() {
         grade = 'C'
     }
 
+    // in 연산자와 범위 연산자로 조선식을 리펙토링 할 수 있다.
+    // else if (score in 80.0..89.9) {
+
     println("Score: $score, Grade: $grade")
 }
