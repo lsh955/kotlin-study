@@ -7,7 +7,7 @@ package chap04.section2
 fun main() {
     print("Enter the lines: ")
 
-    val n = readLine()!!.toInt() // 콘솔로부터 입력받음.
+    val n = readLine()!!.toInt() // 콘솔로부터 입력받고, toInt를 이용해 정숫값으로 변환한 다음 n에 할당.
 
     for (line in 1..n) {
         for (space in 1..(n - line))
