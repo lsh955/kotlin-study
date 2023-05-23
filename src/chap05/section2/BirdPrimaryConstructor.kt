@@ -1,4 +1,4 @@
-package chap05.section2
+package chap05.section2.primary
 
 /**
  * @author 이승환
