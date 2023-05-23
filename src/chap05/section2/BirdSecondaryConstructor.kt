@@ -15,7 +15,7 @@ class Bird {
     constructor(name: String, wing: Int, beak: String, color: String) {
         this.name = name // (3) this.name은 선언된 현재 클래스의 프로퍼티를 나타냄.
         this.wing = wing
-        this.beak = beak
+        this.beak = beak // _beak(언더스코어)를 매개변수에 사용하고 프로퍼티에 this.를 생략할 수 있음.
         this.color = color
     }
 
