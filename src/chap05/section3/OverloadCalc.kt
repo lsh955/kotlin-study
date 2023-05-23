@@ -19,4 +19,7 @@ class Calc {
     fun add(x: Double, y: Double): Double = x + y
     fun add(x: Int, y: Int, z: Int): Int = x + y + z
     fun add(x: String, y: String): String = x + y
+
+    // 오버로딩을 사용하면 같은 이름의 메서드로 다양한 인자를 처리 할 수 있으며,
+    // 메서드를 손쉽게 확장 할 수 있다.
 }
