@@ -20,6 +20,7 @@ class OtherClass {
 
     fun test() {
         val pc = PrivateClass() // 생성가능.
+        pc.access()
     }
 }
 
@@ -30,5 +31,6 @@ fun main() {
 }
 
 fun TopFunction() {
-    val tpc = PrivateClass() // 객체 생성가능.
+    val tpc = PrivateClass() // 생성가능.
+    tpc.access()
 }
