@@ -12,7 +12,7 @@ class User(_id: Int, _name: String, _age: Int) {
     var name: String = _name
         get() = field
         set(value) {
-            field = value
+            field = value // field는 this.name으로 변환됨.
         }
 
     var age: Int = _age
