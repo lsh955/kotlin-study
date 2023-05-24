@@ -1,4 +1,4 @@
-package chap06.section1
+package chap06.section1.gettersetter
 
 /**
  * @author 이승환
