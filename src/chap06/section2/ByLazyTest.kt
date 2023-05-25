@@ -9,7 +9,7 @@ class LazyTest {
         println("init block")
     }
 
-    val subject by lazy {
+    val subject by lazy { // by는 프로퍼티를 위임할 때 사용하는 키워드.
         println("lazy initialized")
         "Kotlin Programming" // lazy 반환값.
     }
