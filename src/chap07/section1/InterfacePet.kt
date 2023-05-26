@@ -14,7 +14,7 @@ interface Pet {
     }
 }
 
-class Cat(override var category: String) : Pet {
+class Cat(override var category: String) : Pet { // 콜론(:) 사용하여 인터페이스 구현.
 
     override fun feeding() {
         println("Feed the cat a tuna can!")
