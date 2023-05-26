@@ -28,7 +28,7 @@ abstract class Vehicle(val name: String,
 class Car(
     name: String, color: String,
     weight: Double,
-    override var maxSpeed: Double // maxSpeed는 오버라이딩함.
+    override var maxSpeed: Double // maxSpeed 오버라이딩.
 ) : Vehicle(name, color, weight) {
 
     override fun start() {
@@ -40,4 +40,34 @@ class Car(
         // 코드 구현부.
         println("Car Stopped")
     }
+}
+
+class Motorcycle(name: String,
+                 color: String,
+                 weight: Double,
+                 override var maxSpeed: Double // maxSpeed 오버라이딩.
+) : Vehicle(name, color, weight) {
+
+    override fun start() {
+        // 코드 구현부.
+        println("Bike Started")
+    }
+
+    override fun stop() {
+        // 코드 구현부.
+        println("Bike Stopped")
+    }
+}
+
+fun main() {
+    val car = Car("SuperMatiz", "yellow", 1110.0, 270.0)
+    val motor = Motorcycle("DreamBike", "red", 173.0, 100.0)
+
+    car.year = "2023"
+
+    car.displaySpecs()
+    car.start()
+
+    motor.displaySpecs()
+    motor.start()
 }
