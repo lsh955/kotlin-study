@@ -20,3 +20,12 @@ class Cat(override var category: String) : Pet {
         println("Feed the cat a tuna can!")
     }
 }
+
+fun main() {
+    val obj = Cat("small")
+
+    println("Pet Category: ${obj.category}")
+
+    obj.feeding() // 구현된 메서드
+    obj.petting() // 기본 메서드
+}
