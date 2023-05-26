@@ -24,3 +24,20 @@ abstract class Vehicle(val name: String,
         println("Name: $name, Color: $color, Weight: $weight, Year: $year, Max Speed: $maxSpeed")
     }
 }
+
+class Car(
+    name: String, color: String,
+    weight: Double,
+    override var maxSpeed: Double // maxSpeed는 오버라이딩함.
+) : Vehicle(name, color, weight) {
+
+    override fun start() {
+        // 코드 구현부.
+        println("Car Started")
+    }
+
+    override fun stop() {
+        // 코드 구현부.
+        println("Car Stopped")
+    }
+}
