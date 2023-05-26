@@ -7,6 +7,10 @@ package chap07.section1
 interface Pet {
     var category: String // abstract 키워드가 없어도 기본은 추상 프로퍼티.
 
+    // 인터페이스에서는 프로퍼티에 값을 저장할 수 없지만,
+    val msgTags: String // val 선언 시 게터 구현이 가능함.
+        get() = "I'm your lovely pet!"
+
     fun feeding() // 마찬가지로 추상 메서드
     fun petting() { // 일반 메서드: 구현부를 포함하면 일반적인 메서드로 기본이 된다.
         // 코드 구현부.
@@ -25,6 +29,7 @@ fun main() {
     val obj = Cat("small")
 
     println("Pet Category: ${obj.category}")
+    println("Pet Message Tags: ${obj.msgTags}")
 
     obj.feeding() // 구현된 메서드
     obj.petting() // 기본 메서드
