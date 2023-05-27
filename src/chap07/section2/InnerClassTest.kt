@@ -4,6 +4,10 @@ package chap07.section2
  * @author 이승환
  * @since 2023-05-27
  */
+interface Switcher { // 인터페이스의 선언
+    fun on(): String
+}
+
 class Smartphone(val model: String) {
     private val cpu = "Exynos"
 
@@ -20,7 +24,12 @@ class Smartphone(val model: String) {
 
         val powerStatus = Led("Red") // 지역클래스 사용.
 
-        return powerStatus.blink()
+        val powerSwitch = object : Switcher {  // 익명 객체를 사용해 on()을 구현.
+            override fun on(): String {
+                return powerStatus.blink()
+            }
+        }
+        return powerSwitch.on()
     }
 }
 
