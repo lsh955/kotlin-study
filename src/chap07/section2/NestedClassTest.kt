@@ -7,7 +7,7 @@ package chap07.section2
 class Outer {
     val ov = 5
 
-    class Nested {
+    class Nested { // 바깥 class인 Outer의 멤버에 접근할 수 없음.
         val nv = 10
 
         fun greeting(): String {
