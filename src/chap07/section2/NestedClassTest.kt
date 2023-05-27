@@ -16,11 +16,21 @@ class Outer {
 
             return "[Nested] Hello ! $nv"
         }
+
+        fun accessOuter() { // 외부 컴페니언 객체는 접근할 수 있음.
+            println(country)
+            getSomething()
+        }
     }
 
     fun outside() {
         val msg = Nested().greeting() // 객체생성 없이 중첩 클래스의 메서드 접근.
         println("[Outer]: $msg, ${Nested().nv}") // 중첩 클래스의 프로퍼티 접근.
+    }
+
+    companion object { // 컴페니언 객체는 static처럼 접근가능.
+        const val country = "Korea"
+        fun getSomething() = println("Get something...")
     }
 }
 
