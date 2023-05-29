@@ -10,7 +10,8 @@ package chap08.section1
 
 // 하지만, 람다식을 매개변수로 받으면 자료형을 결정하지 않아도 실행 시
 // 람다식 본문을 넘겨줄 때 해결할 수 있다.
-fun <T> add(a: T, b: T, op: (T, T) -> T): T {
+typealias arithmetic<T> = (T, T) -> T // 함수의 람다식 매개변수를 좀 더 일기 좋게 단순화 하기위해 arithmetic를 사용가능.
+fun <T> add(a: T, b: T, op: arithmetic<T>): T {
     return op(a, b)
 }
 
