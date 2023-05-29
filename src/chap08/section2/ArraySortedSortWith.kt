@@ -28,4 +28,14 @@ fun main(args : Array<String>) {
     )
     products.forEach { println(it) }
     println()
+
+    // compareBy를 사용하면 먼저 name을 정렬하고,
+    // 이름이 같이 경우에는 다시 price를 기준으로 가격이 낮은 순서부터 정렬진행.
+    products.sortWith(compareBy({it.name}, {it.price}))
+    products.forEach { println(it) }
+    println()
+
+    // 지정된 필드의 가장 작은/큰 값 골라내기.
+    println(products.minBy { it.price })
+    println(products.maxBy { it.price })
 }
