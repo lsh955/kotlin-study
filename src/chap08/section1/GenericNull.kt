@@ -5,6 +5,7 @@ package chap08.section1
  * @since 2023-05-29
  */
 // 특정 타입을 지정하면 null이 허용되지 않음.
+// GenericNull<Int?>와 같이 null을 지정할 수 없음.
 // class GenericNull<T: Any> {
 
 class GenericNull<T> { // 기본적으로 null이 허용되는 형식 매개변수
