@@ -12,4 +12,10 @@ fun main() {
     for (item in fruits) {
         println(item)
     }
+
+    // 요소의 인덱스를 통해 List에 접근하려면,
+    // 컬렉션에 .indices 를 추가.
+    for (index in fruits.indices) { // 인덱스 지정.
+        println("fruits[$index] = ${fruits[index]}")
+    }
 }
