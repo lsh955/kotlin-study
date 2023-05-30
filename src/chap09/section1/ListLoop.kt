@@ -18,4 +18,12 @@ fun main() {
     for (index in fruits.indices) { // 인덱스 지정.
         println("fruits[$index] = ${fruits[index]}")
     }
+
+    // 나머지(%) 연산 활용.
+    for (index in fruits.indices) { // 인덱스 지정.
+        if (index % 2 == 0) { // 짝수만 고르기.
+            // 인덱스 0번과 짝수 요소만 골라내어 출력.
+            println("fruits[$index] = ${fruits[index]}")
+        }
+    }
 }
